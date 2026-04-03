@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -25,7 +25,7 @@
                   <span class="name-en">Zisen Shao</span>
                   <span class="name-cn">邵子森</span>
                 </p>
-                <p>
+                <p style="text-align: justify;">
                   I am a first-year master's student in <a href="https://cs.umd.edu/">Computer Science</a> at the
                   <a href="https://www.umd.edu/">University of Maryland, College Park</a>,
                   where I am advised by <a href="https://ruohangao.github.io/">Prof. Ruohan Gao</a>.
@@ -39,9 +39,9 @@
                   and <a href="https://www.cs.utexas.edu/~pstone/">Prof. Peter Stone</a>.
                   <br><br>
                   I'm interested in computer vision and computer graphics.
-                  My research focuses on <strong>physical informed models</strong> that can 
-                  (1) Reconstruct our <strong>Multimodal 3D/4D World</strong> from multi-modal data,
-                  (2) leverage shared representations across modalities to enable <strong>cross-modal learning</strong>.
+                  My research focuses on <strong>physics-informed models</strong> that can 
+                  (1) reconstruct the digital twins of our <strong>Multimodal World</strong> from multimodal data,
+                  and (2) leverage shared representations across modalities to enable <strong>cross-modal learning</strong>.
 
                 </p>
                 <p style="text-align:center">
@@ -53,28 +53,34 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/zisen.jpg"
-                   style="
-                     display: block;
-                     width: 220px;
-                     height: 220px;
-                     overflow: hidden;
-                     border-radius: 10%;
-                   ">
-                  <img
-                    src="images/zisen.jpg"
-                    alt="profile photo"
-                    class="hoverZoomLink"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      transform: scale(1.5) translateY(-10px);
-                      transform-origin: center;
-                      display: block;
-                    "
-                  >
-                </a>
+                <div style="width: 220px; margin: 0 auto;">
+                  <a href="images/zisen.jpg"
+                     style="
+                       display: block;
+                       width: 220px;
+                       height: 220px;
+                       overflow: hidden;
+                       border-radius: 10%;
+                     ">
+                    <img
+                      src="images/zisen.jpg"
+                      alt="profile photo"
+                      class="hoverZoomLink"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transform: scale(1.5) translateY(-10px);
+                        transform-origin: center;
+                        display: block;
+                      "
+                    >
+                  </a>
+
+                  <p style="text-align: center; margin-top: 12px; color: #555; font-size: 12px; font-style: italic; font-family: 'Comic Sans MS', cursive;">
+                    Aurora over Lake Mendota
+                  </p>
+                </div>
               </td>
             </tr>
           </tbody></table>
@@ -92,7 +98,7 @@
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <video width=100% height=100% muted autoplay loop>
+                  <video width=100% height=100% muted autoplay loop playsinline>
                     <source src="images/freefix.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -107,7 +113,7 @@
                 <strong>Zisen Shao</strong>,
                 Sheng Miao, Pan Wang, Dongfeng Bai, Bingbing Liu,
                 <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
-                <br>
+                <div style="margin-top: 5px;"></div>
                 <em>3DV</em>, 2026
                 <br>
                 <a href="https://xdimlab.github.io/freefix/">project page</a> /
@@ -124,7 +130,7 @@
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id="weref_image">
-                    <video width="160" height="120" muted autoplay loop style="object-fit:cover;">
+                    <video width="160" height="120" muted autoplay loop playsinline style="object-fit:cover;">
                       <source src="images/WeRef.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -148,7 +154,7 @@
                 <br>
                 <strong>Zisen Shao</strong>,
                 <a href="https://pages.cs.wisc.edu/~jphanna/">Josiah P. Hanna</a>,
-                <br>
+                <div style="margin-top: 5px;"></div>
                 <em>RoboCup-2025: Robot Soccer World Cup XXVIII</em>, 2025 &nbsp <strong>(Oral Presentation)</strong>
                 <br>
                 <a href="https://github.com/ZisenShao/WeRef">code</a>
@@ -162,7 +168,7 @@
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <video width="160" height="120" muted autoplay loop style="object-fit:cover;">
+                  <video width="160" height="120" muted autoplay loop playsinline style="object-fit:cover;">
                     <source src="images/wistexunited.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -186,8 +192,8 @@
                 <strong>Zisen Shao</strong>,
                 <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
                 <a href="https://pages.cs.wisc.edu/~jphanna/">Josiah P. Hanna</a>
-                <br>
-                <em>ICRA</em>, 2025 &nbsp; <strong>(Champion of RoboCup SPL Challenge Shield Division 2024, Best RoboCup-Themed Paper Award @ <a href="https://sites.google.com/view/roboletics2/home">Roboletics 2.0</a>)</strong>
+                <div style="margin-top: 5px;"></div>
+                <em>ICRA</em>, 2025 &nbsp; <strong>(<a href="https://spl.robocup.org/results-2024/">Champion of RoboCup SPL Challenge Shield Division 2024</a>, <a href="https://sites.google.com/view/roboletics2/home">Best RoboCup-Themed Paper Award @ Roboletics 2.0</a>)</strong>
                 <br>
                 <a href="https://arxiv.org/abs/2412.09417">arXiv</a> /
                 <a href="https://github.com/wistex-united">code</a> /
