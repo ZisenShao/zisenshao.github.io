@@ -83,6 +83,15 @@ a:hover {
   color: #f09228;
 }
 
+.publication-link {
+  color: #1772d0;
+}
+
+.publication-link:focus,
+.publication-link:hover {
+  color: #f09228;
+}
+
 body,
 td,
 th,
