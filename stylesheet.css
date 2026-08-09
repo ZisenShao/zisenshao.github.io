@@ -83,6 +83,32 @@ a:hover {
   color: #f09228;
 }
 
+.social-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-links a {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.3em;
+}
+
+.social-icon {
+  fill: currentColor;
+  flex: 0 0 auto;
+  height: 1em;
+  width: 1em;
+}
+
+.social-separator {
+  color: #777;
+}
+
 .publication-link {
   color: #1772d0;
 }
