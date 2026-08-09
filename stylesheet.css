@@ -74,6 +74,21 @@ a:hover {
   text-decoration: underline;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 8px;
+  overflow-wrap: break-word;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
 .intro a {
   color: #1772d0;
 }
@@ -107,6 +122,37 @@ a:hover {
 
 .social-separator {
   color: #777;
+}
+
+.portrait-block {
+  margin: 0 auto;
+  width: min(220px, 100%);
+}
+
+.portrait-frame {
+  aspect-ratio: 1;
+  border-radius: 10%;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.portrait-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5) translateY(-10px);
+  transform-origin: center;
+  width: 100%;
+}
+
+.portrait-caption {
+  color: #555;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 12px;
+  font-style: italic;
+  margin: 12px 0 0;
+  text-align: center;
 }
 
 .publication-link {
@@ -197,4 +243,101 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  body {
+    margin: 0;
+  }
+
+  .page-shell {
+    table-layout: fixed;
+  }
+
+  .intro-row,
+  .intro-row > td,
+  .publications-table > tbody,
+  .publications-table > tbody > tr,
+  .publications-table > tbody > tr > td {
+    box-sizing: border-box;
+    display: block;
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .intro {
+    padding: 12px 18px 4px !important;
+  }
+
+  .intro p[style*="text-align: justify"] {
+    line-height: 1.5;
+    text-align: left !important;
+  }
+
+  .name {
+    font-size: 28px;
+    padding-top: 10px;
+  }
+
+  .portrait-cell {
+    padding: 8px 18px 18px !important;
+  }
+
+  .portrait-block {
+    width: min(200px, 62vw);
+  }
+
+  .social-links {
+    gap: 0.6em 1em;
+    line-height: 1.8;
+  }
+
+  .social-separator {
+    display: none;
+  }
+
+  .publications-table {
+    border-spacing: 0;
+  }
+
+  .publications-table > tbody > tr > td:first-child {
+    padding: 14px 18px 6px !important;
+  }
+
+  .publications-table > tbody > tr > td:last-child {
+    padding: 8px 18px 24px !important;
+  }
+
+  .publications-table .one {
+    height: auto;
+    max-width: 240px;
+    width: min(240px, 68vw);
+  }
+
+  .publications-table .one::before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+  }
+
+  .publications-table .one > img,
+  .publications-table .one > video,
+  .publications-table .two {
+    height: 100% !important;
+    inset: 0;
+    object-fit: contain;
+    position: absolute;
+    width: 100% !important;
+  }
+
+  .publications-table .two > img,
+  .publications-table .two > video {
+    height: 100% !important;
+    object-fit: contain;
+    width: 100% !important;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
 }

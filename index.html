@@ -11,15 +11,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table class="page-shell" style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
+          <table class="intro-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr class="intro-row" style="padding:0px">
               <td class="intro" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   <span class="name-en">Zisen Shao</span>
@@ -66,32 +66,17 @@
                   </a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <div style="width: 220px; margin: 0 auto;">
-                  <a href="images/zisen.jpg"
-                     style="
-                       display: block;
-                       width: 220px;
-                       height: 220px;
-                       overflow: hidden;
-                       border-radius: 10%;
-                     ">
+              <td class="portrait-cell" style="padding:2.5%;width:37%;max-width:37%">
+                <div class="portrait-block">
+                  <a href="images/zisen.jpg" class="portrait-frame">
                     <img
                       src="images/zisen.jpg"
                       alt="profile photo"
-                      class="hoverZoomLink"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        transform: scale(1.5) translateY(-10px);
-                        transform-origin: center;
-                        display: block;
-                      "
+                      class="hoverZoomLink portrait-image"
                     >
                   </a>
 
-                  <p style="text-align: center; margin-top: 12px; color: #555; font-size: 12px; font-style: italic; font-family: 'Comic Sans MS', cursive;">
+                  <p class="portrait-caption">
                     Aurora over Lake Mendota
                   </p>
                 </div>
@@ -107,7 +92,7 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="publications-table" style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
@@ -173,7 +158,7 @@
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <img src="images/WeRef.png" width="160" height="120" style="object-fit:cover;">
+                  <img src="images/WeRef.png" width="160" height="120" style="object-fit:cover;" alt="WeRef dataset preview">
                 </div>
                 <script type="text/javascript">
                   function weref_start() {
@@ -191,7 +176,7 @@
                 <strong>Zisen Shao</strong>,
                 <a href="https://pages.cs.wisc.edu/~jphanna/">Josiah P. Hanna</a>
                 <div style="margin-top: 5px;"></div>
-                <em>RoboCup-2025: Robot Soccer World Cup XXVIII</em>, 2025 &nbsp <strong>(Oral Presentation)</strong>
+                <em>RoboCup-2025: Robot Soccer World Cup XXVIII</em>, 2025 &nbsp; <strong>(Oral Presentation)</strong>
                 <br>
                 <a class="publication-link" href="https://github.com/ZisenShao/WeRef">code</a>
                 <p></p>
