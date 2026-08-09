@@ -134,21 +134,25 @@ video {
   border-radius: 10%;
   display: block;
   overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
 .portrait-image {
   display: block;
   height: 100%;
+  inset: 0;
   object-fit: cover;
-  transform: scale(1.5) translateY(-10px);
+  object-position: 50% 52%;
+  position: absolute;
+  transform: scale(1.5);
   transform-origin: center;
   width: 100%;
 }
 
 .portrait-caption {
   color: #555;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive;
   font-size: 12px;
   font-style: italic;
   margin: 12px 0 0;
@@ -200,14 +204,20 @@ h2 {
 }
 
 .name-en {
+  display: inline-block;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   letter-spacing: 0.5px;
   margin-right: 0.28em;
 }
 
 .name-cn {
+  display: inline-block;
   font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
   letter-spacing: 0.08em;
+}
+
+.bio {
+  text-align: justify;
 }
 
 .one {
@@ -243,4 +253,10 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .bio {
+    text-align: left;
+  }
 }
