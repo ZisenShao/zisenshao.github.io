@@ -159,13 +159,38 @@ video {
   text-align: center;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
 .publication-link {
-  color: #1772d0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background-color: #e7e7e7;
+  color: #111;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .publication-link:focus,
 .publication-link:hover {
-  color: #f09228;
+  background-color: #d5d5d5;
+  color: #111;
+  text-decoration: none;
+}
+
+.publication-link:focus-visible {
+  outline: 2px solid #1772d0;
+  outline-offset: 3px;
 }
 
 body,
