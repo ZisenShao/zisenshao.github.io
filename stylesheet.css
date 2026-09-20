@@ -292,8 +292,102 @@ span.highlight {
     border-radius: 10px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
+  /* Break out of the desktop tables' intrinsic column sizing on phones. */
+  .page-shell,
+  .page-shell > tbody,
+  .page-shell > tbody > tr,
+  .page-shell > tbody > tr > td,
+  .intro-table,
+  .intro-table > tbody,
+  .intro-row,
+  .publications-table,
+  .publications-table > tbody,
+  .publications-table > tbody > tr {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .intro-row > td,
+  .publications-table > tbody > tr > td {
+    display: block;
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px 16px !important;
+  }
+
+  .intro-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 12px 16px !important;
+  }
+
+  .intro-row > .intro {
+    display: contents;
+  }
+
+  .intro .name {
+    grid-row: 1;
+  }
+
+  .intro-row > .portrait-cell {
+    grid-row: 2;
+    padding: 24px 0 8px !important;
+  }
+
+  .intro .bio {
+    grid-row: 3;
+  }
+
+  .intro .social-links {
+    grid-row: 4;
+  }
+
+  .portrait-block {
+    width: min(180px, 100%);
+  }
+
   .bio {
     text-align: left;
+    line-height: 1.6;
+  }
+
+  .social-links {
+    column-gap: 10px;
+    row-gap: 4px;
+  }
+
+  .social-links a {
+    min-height: 44px;
+  }
+
+  .publications-table > tbody > tr {
+    margin-bottom: 24px;
+  }
+
+  .publications-table > tbody > tr > td {
+    line-height: 1.5;
+  }
+
+  .publications-table .one {
+    width: min(320px, 100%);
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .publications-table .one img,
+  .publications-table .one video {
+    display: block;
+  }
+
+  .publication-link {
+    box-sizing: border-box;
+    min-height: 44px;
+  }
+
+  .publications-table p:last-child {
+    margin-bottom: 0;
   }
 }
